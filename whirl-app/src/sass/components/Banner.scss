@@ -1,0 +1,12 @@
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50rem;
+	background-image: url('/img/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// linear-gradient(to right bottom, #eb2f6479, #ba265c67),

@@ -2,5 +2,17 @@
 @import 'abstracts/mixins';
 
 @import 'base/base';
+@import 'base/animations';
+
+@import 'layout/Header';
+@import 'layout/SideBar';
+@import 'layout/SideNav';
+@import 'layout/Main';
 
 @import 'components/App';
+@import 'components/NavSearch';
+@import 'components/UserNav';
+@import 'components/Button';
+@import 'components/Hotel';
+@import 'components/Banner';
+@import 'components/Search';

@@ -1,0 +1,16 @@
+@keyframes pulsate {
+	0% {
+		transform: translateZ(0) scale(1);
+		box-shadow: none;
+	}
+
+	50% {
+		-webkit-transform: scale(1.05);
+		transform: translateZ(0) scale(1.05);
+	}
+
+	100% {
+		transform: translateZ(0) scale(1);
+		box-shadow: none;
+	}
+}

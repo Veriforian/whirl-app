@@ -1,0 +1,24 @@
+///////////////////////////////
+//Header Section
+.header {
+	font-size: 1.4rem;
+	height: 7rem;
+	background-color: #fff;
+	border-bottom: var(--line);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include respond(500) {
+		flex-wrap: wrap;
+		height: 11rem;
+		align-content: space-around;
+	}
+}
+
+///////////////////////
+//Logo
+.logo {
+	margin-left: 2rem;
+	height: 5rem;
+}

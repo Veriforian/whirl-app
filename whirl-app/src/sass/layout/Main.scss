@@ -1,0 +1,53 @@
+.main {
+	background-color: #fff;
+	flex: 1;
+}
+
+.content {
+	display: flex;
+
+	@include respond(900) {
+		flex-direction: column;
+	}
+}
+
+.detail {
+	display: flex;
+	padding: 4.5rem;
+	background-color: var(--color-gray-light-1);
+	border-bottom: var(--line);
+	font-size: 1.4rem;
+
+	@include respond(900) {
+		padding: 3rem;
+	}
+
+	@include respond(600) {
+		flex-direction: column;
+	}
+}
+
+.description {
+	background-color: #fff;
+	box-shadow: var(--shadow-light);
+	padding: 3rem;
+	margin-right: 4.5rem;
+	flex: 0 0 60%;
+
+	@include respond(900) {
+		padding: 2rem;
+		margin-right: 3rem;
+	}
+
+	@include respond(600) {
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+}
+
+.user-reviews {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

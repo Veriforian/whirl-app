@@ -1,0 +1,89 @@
+///////////////////////
+//Button Inline
+.btn-inline {
+	border: none;
+	color: var(--color-primary);
+	font-size: inherit;
+	background-color: transparent;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s;
+
+	& span {
+		margin-left: 0.3rem;
+		transition: margin-left 0.2s;
+	}
+
+	&:focus {
+		outline: none;
+		animation: pulsate 1s infinite;
+	}
+
+	&:hover {
+		color: var(--color-gray-dark-1);
+
+		span {
+			margin-left: 0.8rem;
+		}
+	}
+}
+
+///////////////////////
+//Button
+.btn {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-radius: 100px;
+	border: none;
+	background-image: linear-gradient(
+		to right,
+		var(--color-primary-light),
+		var(--color-primary-dark)
+	);
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+
+	& > * {
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		transition: all 0.2s;
+	}
+
+	&__visible {
+		padding: 2rem 7.5rem;
+	}
+
+	&__hidden {
+		position: absolute;
+		left: 0;
+		top: -100%;
+		padding: 2rem 0;
+	}
+
+	&:hover {
+		background-image: linear-gradient(
+			to left,
+			var(--color-primary-light),
+			var(--color-primary-dark)
+		);
+	}
+
+	&:hover &__visible {
+		transform: translateY(100%);
+	}
+
+	&:hover &__hidden {
+		top: 0;
+	}
+
+	&:focus {
+		outline: none;
+		animation: pulsate 1s infinite;
+	}
+}

@@ -1,0 +1,29 @@
+.search {
+	display: flex;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	& > * {
+		display: flex;
+		flex-direction: column;
+	}
+	&__field {
+		&--main {
+			flex: 0 0 60%;
+		}
+
+		&--secondary {
+			flex: 0 0 20%;
+		}
+	}
+
+	&__label {
+	}
+
+	&__input {
+	}
+
+	&__button {
+	}
+}
